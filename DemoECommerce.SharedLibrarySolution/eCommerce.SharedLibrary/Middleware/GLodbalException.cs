@@ -8,7 +8,7 @@ namespace eCommerce.SharedLibrary.Middleware;
 
 public class GLodbalException(RequestDelegate next)
 {
-    public async Task InvokeAsy(HttpContext context)
+    public async Task InvokeAsync(HttpContext context)
     {
         string message = "An error occurred while processing your request.";
         int statusCode = (int)HttpStatusCode.InternalServerError;

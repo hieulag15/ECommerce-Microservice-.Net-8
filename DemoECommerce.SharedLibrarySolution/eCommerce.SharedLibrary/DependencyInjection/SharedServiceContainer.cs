@@ -40,7 +40,7 @@ public static class SharedServiceContainer
         app.UseMiddleware<GLodbalException>();
 
         // Register middleware to listen only API Gateway
-        app.UseMiddleware<ListionToOnlyApiGateway>();
+        //app.UseMiddleware<ListionToOnlyApiGateway>();
 
         return app;
     }
